@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', monospace;  
+    font-weight: bold;
+    margin-top: 25vh;
+    color: black;
+    background-color: lightblue;
+}
+
+.currency-main-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.currency-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    row-gap: 6px;
+}
+
+.inner-button-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.currency-button {
+    position: relative;
+    margin-right: 10px;
+    font-family: 'Press Start 2P', monospace; 
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.currency-button::before {
+    position: absolute;
+    right: 50px;
+    padding-top: 3px;
+    content: "$";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+.switch-button {
+    position: absolute; 
+    background-color: lightblue;
+    top: 50%;          
+    left: 50%;       
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.switch-button:hover {
+    background-color: rgb(135, 182, 197);
+}
+
+.switch-img {
+    rotate: 90deg;
+    height: 20px;
+}
+
+input {
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    text-align: end;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.exchange-rate-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exchange-rate-p {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.exchange-rate-currency {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.currencies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.options {
+    position: absolute;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.options-title {
+    position: relative;
+}
+
+.options-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Press Start 2P', monospace;  
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.options-close:hover {
+    text-decoration: underline;
+}
+
+.options-title-p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.option-list-img {
+    height: 20px;
+}
+
+.search-bar {
+    text-align: start;
+    width: 400px;
+}
+
+.search-bar::placeholder {
+    text-align: start;
+}
+
+.option-list-container {
+    background-color: rgb(228, 227, 227);
+    margin-top: 30px;
+    height: 240px;
+    width: 500px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.option-list {
+    margin-top: 0px;
+    list-style: none;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.option-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding-block: 5px;
+}
+
+.option-list li:hover {
+    opacity: 0.5;
+}
+
+.option-list-currency {
+    margin-bottom: 2px;
+}
+
+.option-list-name {
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 400;
+}

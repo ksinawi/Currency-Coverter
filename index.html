@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Coverter</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Faisal Isam">
+        <meta name="description" content="Live Currency Coverter">
+    </head>
+
+    <body>
+         
+        <main class="currency-main-grid">
+            <p class="main-title">Currency Converter</p>
+            <div class="currency-grid">
+                <div class="button-grid">
+                    <div class="inner-button-grid">
+                        <div class="dropdown-container">
+                          <button class="currency-button" id="from-button">USD</button>
+                        </div>
+                        <input type="number" value="0" min="0" step="0.01" id="from-amount">
+                      </div>
+                      
+                      <div class="inner-button-grid">
+                        <div class="dropdown-container">
+                          <button class="currency-button" id="to-button">CAD</button>
+                        </div>
+                        <input type="number" value="0" readonly id="to-amount">
+                      </div>
+                    <button class="switch-button" id="switch">
+                        <img class="switch-img" src="./images/switch-icon.webp">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="exchange-rate-grid">
+                <p class="exchange-rate-p">Exchange Rate</p>
+                <p class="exchange-rate-currency">Enter Amount</p>
+            </div>
+
+            <div class="options hidden" id="options-drop-down">
+                <div class="option-title">
+                    <button class="options-close" id="close-drop-down">Close</button>
+                    <p class="options-title-p">Select Currency</p>
+                </div>
+                <div class="option-search">
+                    <input type="search" id="search" class="search-bar" placeholder="Search">
+                </div>
+                <div class="option-list-container">
+                    <ul class="option-list" id="option-list">
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
