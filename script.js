@@ -1,6 +1,6 @@
 //* selectors
 
-const key = "fca_live_kUsjfY8RXEmIRZhIUOyTfnqytFKIqmhFxwebm39c";
+const key = "your_api_key";
 
 let currencies = [];
 let rates = {};
